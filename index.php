@@ -38,8 +38,8 @@
                 <!--fix this weird linebreak stuff-->
                 <br>
                 <br>
-                <!--<button onclick='location.href='main.php#formcontainer'' type='button' class='btn'>Zum Formular</button>-->
-                <a href='main.php#formcontainer' class='btn'>Weiter zum Formular</a>
+                <!--<button onclick='location.href='index.php#formcontainer'' type='button' class='btn'>Zum Formular</button>-->
+                <a href='index.php#formcontainer' class='btn'>Weiter zum Formular</a>
                 <br>
                 <br>
             </div>
