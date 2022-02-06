@@ -1,9 +1,42 @@
+/* WRG COLORS:
+:root {
+    --primary: #37597F;
+    --bg: #A1BDDF;
+    --tertiary: #9DB4CC;
+    --text: #98ACC4;
+}
+*/
+
+:root {
+    --primary: #41729F;
+    --bg: #5885AF;
+    --tertiary: #3C618E;
+    --text: #C3E0E5;
+    --hover: #96B4D8;
+}
+
+::placeholder {
+    color: var(--text);
+    opacity: 0.75;
+    text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--text);
+    text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text);
+    text-align: center;
+}
+
 html {
     font-size: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     /*background-color: #28415F;*/
-    color: black;
+    color: var(--text);
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
@@ -16,6 +49,7 @@ h1,h2 {
 body {
     margin-left: 0;
     margin-right: 0;
+    background-color: var(--bg);
 }
 
 @media (min-width: 575px) {
@@ -36,7 +70,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #96B4D8;
+    background-color: var(--primary);
     padding: 1%;
     border-radius: 10px; 
     /*top: 8px;
@@ -49,23 +83,35 @@ body {
     padding-right: 2%;
     padding-top: 0.25%;
     padding-bottom: 0.25%;
-    background-color: #3C618E;
+    background-color: var(--tertiary);
     border-radius: 10px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Font Name', lato;
 }
 
-#welcome {
-    display: flex;
-    flex-direction: column;
-    background-color: #96B4D8;
-    /*background-image: url(media/krombi.jpg);
-    background-size: 100%;
-    background-position-y: center;*/
-    border-radius: 10px;
-    justify-content: center;
-    padding: 1%;
+
+@media (max-width: 720px) {
+    #welcomeDiv {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: center;
+        background-color: var(--primary);
+        padding: 1%;
+    }
+}
+
+@media (min-width: 720px) {
+    #welcomeDiv {
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        justify-content: center;
+        background-color: var(--primary);
+        padding: 1%;
+        align-items: center;
+    }
 }
 
 .text {
@@ -74,67 +120,92 @@ body {
     font-family: 'Font Name', lato;
 }
 
-.btn {
-    background-color: #3C618E;
-    border: 0;
+.img {
+    object-fit: contain;
+    max-width: 100%;
     border-radius: 10px;
-    padding: 0.5%;
-    color: #FFFFFF;
 }
 
+.btn {
+    align-self: center;
+    background-color: var(--tertiary);
+    border: 0;
+    border-radius: 10px;
+    padding: 1%;
+    color: var(--text);
+}
 
-#formular {
+#formcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #96B4D8;
+    background-color: var(--primary);
     border-radius: 10px;
     padding: 1%;
     text-align: center;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formelement {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputbox {
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--tertiary);
+    color: var(--text);
+    width: 60%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #96B4D8;
+    justify-content: center;
+    background-color: var(--primary);
     border-radius: 10px;
     padding: 1%;
 }
 
 footer a:link, footer a:visited {
     text-decoration: underline;
-    color: black;
+    color: var(--text);
 }
 
-footer a:hover {
-    text-decoration: underline;
-    color: #3C618E;
-}
-
-footer a:active {
-    text-decoration: underline;
-    color: #FFFFFF;
-}
-
-#welcome a:link, a:visited , #navbar a:link, a:visited {
+#welcomeDiv a:link, a:visited , #navbar a:link, a:visited {
     text-decoration: none;
+    color: var(--text);
+}
+
+#welcomeDiv a:hover, #navbar a:hover, footer a:hover {
+    text-decoration: underline;
+    color: var(--hover);
+}
+
+#welcomeDiv a:active, #navbar a:active, footer a:active {
+    text-decoration: underline;
     color: #FFFFFF;
 }
 
-#welcome a:hover, #navbar a:hover {
-    text-decoration: underline;
-    color: #96B4D8;
+@media (min-width: 575px) {
+    .footerrow {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Font Name', lato;
+    }
 }
 
-#welcome a:active, #navbar a:active {
-    text-decoration: underline;
-    color: #FFFFFF;
-}
-
-.footerrow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: 'Font Name', lato;
+@media (max-width: 575px) {
+    .footerrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Font Name', lato;
+    }
 }
