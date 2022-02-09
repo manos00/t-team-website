@@ -39,7 +39,7 @@
                 <br>
                 <br>
                 <!--<button onclick='location.href='index.php#formcontainer'' type='button' class='btn'>Zum Formular</button>-->
-                <a href='index.php#formcontainer' class='btn'>Weiter zum Formular</a>
+                <a href='index.php#formcontainer' class='btn'>Wei&shy;ter zum For&shy;mu&shy;lar</a>
                 <br>
                 <br>
             </div>
@@ -49,36 +49,26 @@
             <div class='text'>
                 <h1>For&shy;mu&shy;lar</h1>
                 <form class="form" action="confirmation.php" method="POST">
-                    <div class="formelement">
-                        <label for="name">Name:</label>
-                        <input class="inputbox" placeholder="Mustermann"type="text" id="name" name="name">
-                    </div>
-                    <div class="formelement">
-                        <label for="email">Email:</label>
-                        <input class="inputbox" placeholder="max.mustermann@mail.de" type="email" id="email" name="email">
-                    </div>
-                    <div class="formelement">
-                        <label for="category">Kategorie:</label>
-                        <select style="text-align: center; color: var(--text)" class="inputbox" name="category" id="category">
+                        <label class="item1" for="name">Name:</label>
+                        <input class="inputbox item2" placeholder="Mustermann"type="text" id="name" name="name">
+                        <label class="item3" for="email">Email:</label>
+                        <input class="inputbox item4" placeholder="max.mustermann@mail.de" type="email" id="email" name="email">
+                        <label class="item5" for="category">Ka&shy;te&shy;go&shy;rie:</label>
+                        <select style="text-align: center; color: var(--text)" class="inputbox item6" name="category" id="category">
                             <option value="">Wählen Sie eine Kategorie</option>
                             <option value="red">Audio</option>
                             <option value="green">Video</option>
                             <option value="blue">Software</option>
                             <option value="blue">Anderes</option>
                         </select>
-                    </div>
-                    <div class="formelement">
-                        <label for="room">Raum:</label>
-                        <input class="inputbox" placeholder="z.B. 212" type="number" min="1" max="350" id="room" name="room">
-                    </div>
-                    <div class="formelement">
-                        <label for="problem">Problem:</label>
-                        <textarea style="font-family: 'Font Name', lato" class="inputbox" placeholder="Ihr technisches Problem" id="problem" name="problem"></textarea>
-                    </div>
-                    <button class="btn" type="submit">Absenden</button>
+                        <label class="item7" for="room">Raum:</label>
+                        <input class="inputbox item8" placeholder="z.B. 212" type="number" min="1" max="350" id="room" name="room">
+                        <label class="item9" for="problem">Pro&shy;blem:</label>
+                        <textarea style="font-family: 'Font Name', lato" class="inputbox item10" placeholder="Ihr technisches Problem" id="problem" name="problem"></textarea>
+                    <button class="btn" type="submit">Ab&shy;sen&shy;den</button>
                 </form>
                 <br>
-            </div>
+            </div>  
         </div>
         <br>
     </body>

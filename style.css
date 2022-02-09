@@ -126,13 +126,30 @@ body {
     border-radius: 10px;
 }
 
-.btn {
-    align-self: center;
-    background-color: var(--tertiary);
-    border: 0;
-    border-radius: 10px;
-    padding: 1%;
-    color: var(--text);
+@media (min-width: 575px) {
+    .btn {
+        align-self: center;
+        background-color: var(--tertiary);
+        border: 0;
+        border-radius: 10px;
+        padding: 1%;
+        color: var(--text);
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 575px) {
+    .btn {
+        align-self: center;
+        background-color: var(--tertiary);
+        border: 0;
+        border-radius: 10px;
+        padding: 1%;
+        color: var(--text);
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
 
 #formcontainer {
@@ -143,17 +160,29 @@ body {
     border-radius: 10px;
     padding: 1%;
     text-align: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#formcontainer::-webkit-scrollbar {
+    display: none;
 }
 
-.formelement {
-    display: flex;
-    justify-content: space-evenly;
+@media (min-width: 575px) {
+    .form {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .form {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
 }
 
 .inputbox {
@@ -161,7 +190,6 @@ body {
     border-radius: 10px;
     background-color: var(--tertiary);
     color: var(--text);
-    width: 60%;
 }
 
 footer {
