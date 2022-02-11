@@ -38,8 +38,8 @@
                 <!--fix this weird linebreak stuff-->
                 <br>
                 <br>
-                <!--<button onclick='location.href='index.php#formcontainer'' type='button' class='btn'>Zum Formular</button>-->
-                <a href='index.php#formcontainer' class='btn'>Wei&shy;ter zum For&shy;mu&shy;lar</a>
+                <!--<button onclick='location.href='#formcontainer'' type='button' class='btn'>Zum Formular</button>-->
+                <a href='#formcontainer' class='btn'>Wei&shy;ter zum For&shy;mu&shy;lar</a>
                 <br>
                 <br>
             </div>
@@ -49,22 +49,22 @@
             <div class='text'>
                 <h1>For&shy;mu&shy;lar</h1>
                 <form class="form" action="confirmation.php" method="POST">
-                        <label class="item1" for="name">Name:</label>
-                        <input class="inputbox item2" placeholder="Mustermann"type="text" id="name" name="name">
-                        <label class="item3" for="email">Email:</label>
-                        <input class="inputbox item4" placeholder="max.mustermann@mail.de" type="email" id="email" name="email">
-                        <label class="item5" for="category">Ka&shy;te&shy;go&shy;rie:</label>
-                        <select style="text-align: center; color: var(--text)" class="inputbox item6" name="category" id="category">
+                        <label for="name">Name:</label>
+                        <input class="inputbox" placeholder="Mustermann"type="text" id="name" name="name">
+                        <label for="email">Email:</label>
+                        <input class="inputbox" placeholder="max.mustermann@mail.de" type="email" id="email" name="email">
+                        <label for="category">Ka&shy;te&shy;go&shy;rie:</label>
+                        <select style="text-align: center; color: var(--text)" class="inputbox" name="category" id="category">
                             <option value="">Wählen Sie eine Kategorie</option>
                             <option value="red">Audio</option>
                             <option value="green">Video</option>
                             <option value="blue">Software</option>
                             <option value="blue">Anderes</option>
                         </select>
-                        <label class="item7" for="room">Raum:</label>
-                        <input class="inputbox item8" placeholder="z.B. 212" type="number" min="1" max="350" id="room" name="room">
-                        <label class="item9" for="problem">Pro&shy;blem:</label>
-                        <textarea style="font-family: 'Font Name', lato" class="inputbox item10" placeholder="Ihr technisches Problem" id="problem" name="problem"></textarea>
+                        <label for="room">Raum:</label>
+                        <input class="inputbox" placeholder="z.B. 212" type="number" min="1" max="350" id="room" name="room">
+                        <label for="problem">Pro&shy;blem:</label>
+                        <textarea style="font-family: 'Font Name', lato" class="inputbox" placeholder="Ihr technisches Problem" id="problem" name="problem"></textarea>
                     <button class="btn" type="submit">Ab&shy;sen&shy;den</button>
                 </form>
                 <br>
@@ -74,7 +74,7 @@
     </body>
     <footer>
         <div class='footerrow'>
-            <a href='index.php#top'>Zu&shy;rück nach oben</a>
+            <a href='#top'>Zu&shy;rück nach oben</a>
         </div>
         <br>
         <div class='footerrow'>

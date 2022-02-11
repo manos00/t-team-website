@@ -32,7 +32,6 @@
 }
 
 html {
-    font-size: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     /*background-color: #28415F;*/
@@ -50,6 +49,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     background-color: var(--bg);
+    font-size: large;
 }
 
 @media (min-width: 575px) {
@@ -137,6 +137,14 @@ body {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    .form {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    .form label, input, textarea, select, button{
+        font-size: large;
+    }
 }
 
 @media (max-width: 575px) {
@@ -149,6 +157,11 @@ body {
         color: var(--text);
         grid-column-start: 1;
         grid-column-end: 2;
+    }
+    .form {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
     }
 }
 
@@ -169,27 +182,12 @@ body {
     display: none;
 }
 
-@media (min-width: 575px) {
-    .form {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-    }
-}
-
-@media (max-width: 575px) {
-    .form {
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 10px;
-    }
-}
-
 .inputbox {
     border: 0;
     border-radius: 10px;
     background-color: var(--tertiary);
     color: var(--text);
+    padding: 1%;
 }
 
 footer {
