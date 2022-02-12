@@ -5,3 +5,4 @@
 - [ ] design
   - [ ] colors?
   - [ ] layout?
+- [ ] dropdown navbar menu for mobile users
