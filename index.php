@@ -76,7 +76,7 @@
                             <option value='blue'>Anderes</option>
                         </select>
                         <label for='room'>Raum:</label>
-                        <input class='inputbox' placeholder='z.B. 212' type='number' min='1' max='350' id='room' name='room'>
+                        <input class='inputbox' placeholder='z.B. 212' type='number' min='20' max='318' id='room' name='room'>
                         <label for='problem'>Pro&shy;blem:</label>
                         <textarea style='font-family: "Font Name", lato' class='inputbox' placeholder='Ihr technisches Problem' id='problem' name='problem'></textarea>
                     <button class='btn' type='submit'>Ab&shy;sen&shy;den</button>
